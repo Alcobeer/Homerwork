@@ -1,10 +1,10 @@
 package ru.ibs.oject.homerwork1;
 
 public class Intern extends Employee{
-    String name;
-    String nameDev;
-    int age;
-    float experience;
+    private String name;
+    private String nameDev;
+    private int age;
+    private float experience;
 
     public Intern(String name, String nameDev, int age, float experience) {
         this.name = name;

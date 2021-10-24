@@ -1,11 +1,11 @@
 package ru.ibs.oject.homerwork1;
 
 public class Developer extends Employee{
-    String name;
-    String project;
-    int age;
-    int experience;
-    boolean statusProject;
+    private String name;
+    private String project;
+    private int age;
+    private int experience;
+    private boolean statusProject;
 
     public Developer(String name) {
         this.name = name;

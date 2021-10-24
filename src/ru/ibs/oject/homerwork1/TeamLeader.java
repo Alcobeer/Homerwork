@@ -1,9 +1,9 @@
 package ru.ibs.oject.homerwork1;
 
 public class TeamLeader extends Employee implements Manager{
-    String name;
-    int age;
-    int experience;
+    private String name;
+    private int age;
+    private int experience;
 
 
 

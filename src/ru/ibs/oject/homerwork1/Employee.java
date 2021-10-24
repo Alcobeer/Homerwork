@@ -1,9 +1,9 @@
 package ru.ibs.oject.homerwork1;
 
 public abstract class Employee {
-    int idEmployee;
-    int salary;
-    String name;
+    private int idEmployee;
+    private int salary;
+    private String name;
 
     public String getName() {
         return name;
