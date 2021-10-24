@@ -1,42 +1,29 @@
 package ru.ibs.oject.homerwork1;
 
 public class TeamLeader extends Employee implements Manager{
-    private String name;
-    private int age;
-    private int experience;
+    private int experienceInSfera;
+    private int countOfProgeckt;
 
 
-
-    public TeamLeader(String name, int age, int experience) {
-        this.name = name;
-        this.age = age;
-        this.experience = experience;
+    public TeamLeader(String name,int experienceInSfera, int countOfProgeckt) {
+        this.experienceInSfera = experienceInSfera;
+        this.countOfProgeckt = countOfProgeckt;
     }
 
-    @Override
-    public String getName() {
-        return name;
+    public int getCountOfProgeckt() {
+        return countOfProgeckt;
     }
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public void setCountOfProgeckt(int countOfProgeckt) {
+        this.countOfProgeckt = countOfProgeckt;
     }
 
-    public int getAge() {
-        return age;
+    public int getExperienceInSfera() {
+        return experienceInSfera;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public int getExperience() {
-        return experience;
-    }
-
-    public void setExperience(int experience) {
-        this.experience = experience;
+    public void setExperienceInSfera(int experienceInSfera) {
+        this.experienceInSfera = experienceInSfera;
     }
 
     public void cool(int exp){
@@ -45,6 +32,11 @@ public class TeamLeader extends Employee implements Manager{
     @Override
     public void plan( int plan){
         System.out.println("План на месяц : plan");
+    }
+    @Override
+    public void welcome (String name){
+        System.out.println("Welcome, dear " + name);
+        System.out.println("Это сообщение выведено в классе  тимлида");
     }
 
 }

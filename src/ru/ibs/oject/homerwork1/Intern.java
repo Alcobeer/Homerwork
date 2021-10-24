@@ -1,50 +1,30 @@
 package ru.ibs.oject.homerwork1;
 
 public class Intern extends Employee{
-    private String name;
-    private String nameDev;
-    private int age;
-    private float experience;
+    private String nameOfTheSupervisingDeveloper;
+    private float experienceInSfera;
 
-    public Intern(String name, String nameDev, int age, float experience) {
-        this.name = name;
-        this.nameDev = nameDev;
-        this.age = age;
-        this.experience = experience;
+    public Intern(String name, String nameOfTheSupervisingDeveloper, int age, float experienceInSfera) {
+
+        this.nameOfTheSupervisingDeveloper = nameOfTheSupervisingDeveloper;
+        this.experienceInSfera = experienceInSfera;
     }
 
-    @Override
-    public String getName() {
-        return name;
+
+    public String getNameOfTheSupervisingDeveloper() {
+        return nameOfTheSupervisingDeveloper;
     }
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
+    public void setNameOfTheSupervisingDeveloper(String nameOfTheSupervisingDeveloper) {
+        this.nameOfTheSupervisingDeveloper = nameOfTheSupervisingDeveloper;
     }
 
-    public String getNameDev() {
-        return nameDev;
+    public float getExperienceInSfera() {
+        return experienceInSfera;
     }
 
-    public void setNameDev(String nameDev) {
-        this.nameDev = nameDev;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public float getExperience() {
-        return experience;
-    }
-
-    public void setExperience(float experience) {
-        this.experience = experience;
+    public void setExperienceInSfera(float experienceInSfera) {
+        this.experienceInSfera = experienceInSfera;
     }
 
     public void careaUp(float exp){
@@ -52,5 +32,10 @@ public class Intern extends Employee{
             System.out.println("Congratulations you are being promoted");
         else
             System.out.println("Wait 1 year, pleasure");
+    }
+    @Override
+    public void welcome (String name){
+        System.out.println("Welcome, dear " + name);
+        System.out.println("Это сообщение выведено в классе  стажёр");
     }
 }

@@ -2,8 +2,18 @@ package ru.ibs.oject.homerwork1;
 
 public abstract class Employee {
     private int idEmployee;
-    private int salary;
     private String name;
+    private int salary;
+    private int age;
+
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public String getName() {
         return name;

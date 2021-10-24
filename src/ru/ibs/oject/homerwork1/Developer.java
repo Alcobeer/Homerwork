@@ -1,33 +1,15 @@
 package ru.ibs.oject.homerwork1;
 
 public class Developer extends Employee{
-    private String name;
     private String project;
-    private int age;
-    private int experience;
+    private int experienceInSfera;
     private boolean statusProject;
 
-    public Developer(String name) {
-        this.name = name;
-    }
 
-
-    public Developer(String name, String project, int age, int experience, boolean statusProject) {
-        this.name = name;
+    public Developer(String project, int age, int experienceInSfera, boolean statusProject) {
         this.project = project;
-        this.age = age;
-        this.experience = experience;
+        this.experienceInSfera = experienceInSfera;
         this.statusProject = statusProject;
-    }
-
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getProject() {
@@ -38,20 +20,12 @@ public class Developer extends Employee{
         this.project = project;
     }
 
-    public int getAge() {
-        return age;
+    public int getExperienceInSfera() {
+        return experienceInSfera;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public int getExperience() {
-        return experience;
-    }
-
-    public void setExperience(int experience) {
-        this.experience = experience;
+    public void setExperienceInSfera(int experienceInSfera) {
+        this.experienceInSfera = experienceInSfera;
     }
 
     public boolean isStatusProject() {
@@ -83,7 +57,8 @@ public class Developer extends Employee{
     @Override
     public void welcome(String name){
         String welcome = this.getSentence() + name;
-        System.out.println(welcome+ "это класс прогер");
+        System.out.println(welcome);
+        System.out.println(" это сообщение выведено в классе прогер");
     }
 
 
