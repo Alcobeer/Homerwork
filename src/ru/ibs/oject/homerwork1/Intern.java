@@ -4,8 +4,11 @@ public class Intern extends Employee{
     private String nameOfTheSupervisingDeveloper;
     private float experienceInSfera;
 
-    public Intern(String name, String nameOfTheSupervisingDeveloper, int age, float experienceInSfera) {
+    public Intern(String name, String nameOfTheSupervisingDeveloper, int age,int salary, float experienceInSfera) {
 
+        setName(name);
+        setAge(age);
+        setSalary(salary);
         this.nameOfTheSupervisingDeveloper = nameOfTheSupervisingDeveloper;
         this.experienceInSfera = experienceInSfera;
     }

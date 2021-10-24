@@ -5,7 +5,10 @@ public class TeamLeader extends Employee implements Manager{
     private int countOfProgeckt;
 
 
-    public TeamLeader(String name,int experienceInSfera, int countOfProgeckt) {
+    public TeamLeader(String name,int experienceInSfera, int countOfProgeckt,int age, int salary) {
+        setName(name);
+        setAge(age);
+        setSalary(salary);
         this.experienceInSfera = experienceInSfera;
         this.countOfProgeckt = countOfProgeckt;
     }

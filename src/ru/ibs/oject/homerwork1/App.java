@@ -9,26 +9,50 @@ public class App {
     public static void main(String[] string){
         Developer Ivan = new Developer("Игра",25,3,true);
         Ivan.setName("Иван");
-        Intern Matvey=new Intern("Матвей","Иван", 22, 0.5f);
-        TeamLeader Kolia=new TeamLeader("Коля", 10,5);
+        Ivan.setAge(25);
+        Ivan.setSalary(60000);
+        Intern Matvey=new Intern("Матвей","Иван", 22, 35000,2.5f);
+        TeamLeader Kolia=new TeamLeader("Коля", 10,5,35,12000);
         Ivan.setAge(30);
-        System.out.println(Ivan.getAge());
-        System.out.println(Ivan.getName());
-        Ivan.performance("Иван","Игра", true);
-
-        Ivan.welcome("Иван");
-        Matvey.welcome("Матвей");
-        Kolia.welcome("Коля");
+//        System.out.println(Ivan.getAge());
+//        System.out.println(Ivan.getName());
+//        Ivan.performance("Иван","Игра", true);
+//
+//        Ivan.welcome("Иван");
+//        Matvey.welcome("Матвей");
+//        Kolia.welcome("Коля");
 
         HashSet<Employee> employees= new HashSet<Employee>();
         employees.add(Ivan);
         employees.add(Matvey);
         employees.add(Kolia);
         System.out.println(employees);
+        for(Employee e : employees){
+            System.out.println(e.getClass());
+            System.out.println(e.getName());
+            System.out.println(e.getAge());
+            System.out.println(e.getSalary());
+        }
 
-        ArrayList<HashSet<Employee>> employees_list = new ArrayList<>();
-        employees_list.add(employees);
-        System.out.println(employees_list);
+
+        ArrayList<Employee> employeeArrayList=new ArrayList<Employee>();
+        for(Employee e : employees){
+            employeeArrayList.add(e);
+        }
+        System.out.println(employeeArrayList.get(0));
+        System.out.println(employeeArrayList.get(1));
+
+
+        System.out.println(employeeArrayList.get(1).getName());
+        for(int e=0;e<employeeArrayList.size() ; e++ ){
+
+            System.out.println(employeeArrayList.get(e).getClass());
+            System.out.println(employeeArrayList.get(e).getName());
+            System.out.println(employeeArrayList.get(e).getAge());
+            System.out.println(employeeArrayList.get(e).getSalary());
+        }
+
+
 
 
 
