@@ -21,7 +21,7 @@ public class App {
         employees.add(Matvey);
         employees.add(Kolia);
         //можно и так
-        //employees.add(new Developer("Бщря>","Игра",56,3,true));
+        //employees.add(new Developer("Боря>","Игра",56,3,true));
         System.out.println(employees);
 
         ArrayList<HashSet<Employee>> employees_list = new ArrayList<>();

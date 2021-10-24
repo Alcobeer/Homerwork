@@ -5,19 +5,19 @@ public class Developer extends Employee{
     String project;
     int age;
     int experience;
-    boolean status_project;
+    boolean statusProject;
 
     public Developer(String name) {
         this.name = name;
     }
 
 
-    public Developer(String name, String project, int age, int experience, boolean status_project) {
+    public Developer(String name, String project, int age, int experience, boolean statusProject) {
         this.name = name;
         this.project = project;
         this.age = age;
         this.experience = experience;
-        this.status_project = status_project;
+        this.statusProject = statusProject;
     }
 
     @Override
@@ -54,20 +54,20 @@ public class Developer extends Employee{
         this.experience = experience;
     }
 
-    public boolean isStatus_project() {
-        return status_project;
+    public boolean isStatusProject() {
+        return statusProject;
     }
 
-    public void setStatus_project(boolean status_project) {
-        this.status_project = status_project;
+    public void setStatusProject(boolean statusProject) {
+        this.statusProject = statusProject;
     }
 
     //Методы класса
 
 
-    public String performance(String name,String project,boolean status_project){
+    public String performance(String name,String project,boolean statusProject){
     String performance = this.getSentence()  + name ;
-    if(status_project) {
+    if(statusProject) {
         String performance_up = this.getInf() + project;
         System.out.println(performance +performance_up);
     }else

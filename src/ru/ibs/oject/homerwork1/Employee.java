@@ -1,7 +1,7 @@
 package ru.ibs.oject.homerwork1;
 
 public abstract class Employee {
-    int id_employee;
+    int idEmployee;
     int salary;
     String name;
 
@@ -13,12 +13,12 @@ public abstract class Employee {
         this.name = name;
     }
 
-    public int getId_employee() {
-        return id_employee;
+    public int getIdEmployee() {
+        return idEmployee;
     }
 
-    public void setId_employee(int id_employee) {
-        this.id_employee = id_employee;
+    public void setIdEmployee(int idEmployee) {
+        this.idEmployee = idEmployee;
     }
 
     public int getSalary() {

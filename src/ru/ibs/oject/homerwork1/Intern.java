@@ -2,13 +2,13 @@ package ru.ibs.oject.homerwork1;
 
 public class Intern extends Employee{
     String name;
-    String name_dev;
+    String nameDev;
     int age;
     float experience;
 
-    public Intern(String name, String name_dev, int age, float experience) {
+    public Intern(String name, String nameDev, int age, float experience) {
         this.name = name;
-        this.name_dev = name_dev;
+        this.nameDev = nameDev;
         this.age = age;
         this.experience = experience;
     }
@@ -23,12 +23,12 @@ public class Intern extends Employee{
         this.name = name;
     }
 
-    public String getName_dev() {
-        return name_dev;
+    public String getNameDev() {
+        return nameDev;
     }
 
-    public void setName_dev(String name_dev) {
-        this.name_dev = name_dev;
+    public void setNameDev(String nameDev) {
+        this.nameDev = nameDev;
     }
 
     public int getAge() {
