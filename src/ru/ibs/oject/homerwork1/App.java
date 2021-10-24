@@ -22,7 +22,7 @@ public class App {
 //        Matvey.welcome("Матвей");
 //        Kolia.welcome("Коля");
 
-        HashSet<Employee> employees= new HashSet<Employee>();
+        HashSet<Employee> employees= new HashSet<>();
         employees.add(Ivan);
         employees.add(Matvey);
         employees.add(Kolia);
@@ -35,7 +35,7 @@ public class App {
         }
 
 
-        ArrayList<Employee> employeeArrayList=new ArrayList<Employee>();
+        ArrayList<Employee> employeeArrayList=new ArrayList<>();
         for(Employee e : employees){
             employeeArrayList.add(e);
         }
