@@ -33,8 +33,7 @@ public class App {
        // HashSet<Employee> employees= new HashSet<>();
         Set<Employee> employees= new HashSet<>();
 //      Попытаться заполнить это автоматически
-//        for (Employee e : employees){
-//        employees.add(e);}
+
         employees.add(matvey);
         employees.add(kolia);
         employees.add(hristian);
@@ -94,9 +93,9 @@ public class App {
 //----------------------второе дз про анонимный класс---------------------
         //--- экзэмпляр анонимного класса сотрудник Егорка
         var egorka = new Employee() {
-            String dolznost= "Уборщик";
-            int prise=60;
-            int countTimeInWeek=3;
+            public String dolznost= "Уборщик";
+            public int prise;
+            public int countTimeInWeek;
 
 
             //-------гетеры и сетеры-----------
