@@ -93,9 +93,9 @@ public class App {
 //----------------------второе дз про анонимный класс---------------------
         //--- экзэмпляр анонимного класса сотрудник Егорка
         var egorka = new Employee() {
-            public String dolznost= "Уборщик";
-            public int prise;
-            public int countTimeInWeek;
+            private String dolznost= "Уборщик";
+            private int prise;
+            private int countTimeInWeek;
 
 
             //-------гетеры и сетеры-----------
