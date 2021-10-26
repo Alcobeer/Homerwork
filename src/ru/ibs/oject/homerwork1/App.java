@@ -75,6 +75,8 @@ public class App {
 //------------задание 2-----------------
         List<Employee> filterSalary=employeeArrayList
                 .stream()
+                .filter(n->n.getAge()>25)
+                // от сортировки можно избавиться, но раз уж написал, то пусть будет
                 .sorted(Comparator.comparing(Employee::getSalary))
                 .collect(Collectors.toList());
         filterSalary.forEach(System.out::println);
