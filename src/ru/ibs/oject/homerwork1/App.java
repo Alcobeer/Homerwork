@@ -32,16 +32,9 @@ public class App {
 
        // HashSet<Employee> employees= new HashSet<>();
         Set<Employee> employees= new HashSet<>();
-//      Попытаться заполнить это автоматически
 
-        employees.add(matvey);
-        employees.add(kolia);
-        employees.add(hristian);
-        employees.add(ann);
-        employees.add(oleg);
-        employees.add(ignat);
-        employees.add(kostia);
-        employees.add(ivan);
+        employees.addAll(Arrays.asList(matvey,kolia,hristian,ann,oleg,ignat,kostia,ivan));
+
 
 
 //        System.out.println(employees);
