@@ -5,7 +5,6 @@ public class Intern extends Employee{
     private float experienceInSfera;
 
     public Intern(String name, String nameOfTheSupervisingDeveloper, int age,int salary, float experienceInSfera) {
-
         setName(name);
         setAge(age);
         setSalary(salary);

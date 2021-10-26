@@ -42,4 +42,12 @@ public abstract class Employee {
      public void welcome (String name){
          System.out.println("Welcome, dear" + name);
      }
+    @Override
+    public String toString() {
+        return "Employee{" + " Должность '"+getClass().getSimpleName() +'\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age + '\'' +
+                "salary='" + salary +
+                '}';
+    }
 }
